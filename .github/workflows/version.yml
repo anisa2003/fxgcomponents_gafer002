@@ -6,10 +6,10 @@ on:
       - master
 
 jobs:
-  version:
-    name: 🎰 Change version
+  #PATCH RELEASE
+  patch-version:
+    name: 🎰 Change patch version
     runs-on: ubuntu-latest
-    #PATCH RELEASE
     if: "startsWith(github.event.head_commit.message, '[PATCH]')"
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +20,10 @@ jobs:
       - run: npm version patch -m "[RELEASE] %s"
       - run: git push
       - run: git push --tags 
-    #MINOR RELEASE
+  #MINOR RELEASE
+  minor-version:
+    name: 🎰 Change minor version
+    runs-on: ubuntu-latest
     if: "startsWith(github.event.head_commit.message, '[MINOR]')"
     steps:
       - uses: actions/checkout@v3
@@ -31,7 +34,10 @@ jobs:
       - run: npm version minor -m "[RELEASE] %s"
       - run: git push
       - run: git push --tags
-    #MAJOR RELEASE
+  #MAJOR RELEASE
+  major-version:
+    name: 🎰 Change major version
+    runs-on: ubuntu-latest
     if: "startsWith(github.event.head_commit.message, '[MAJOR]')"
     steps:
       - uses: actions/checkout@v3
