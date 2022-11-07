@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: 📦 Deploy npm package
     runs-on: ubuntu-latest
-    if: "startsWith(github.event.head_commit.message, '[RELEASE VERSION]')"
+    if: "startsWith(github.event.head_commit.message, '[RELEASE]')"
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3

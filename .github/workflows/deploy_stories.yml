@@ -9,7 +9,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    if: "startsWith(github.event.head_commit.message, '[RELEASE VERSION]')"
+    if: "startsWith(github.event.head_commit.message, '[RELEASE]')"
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
