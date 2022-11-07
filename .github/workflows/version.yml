@@ -20,7 +20,7 @@ jobs:
       - run: npm version patch -m "[RELEASE] %s"
       - run: git push
       - run: git push --tags 
-  #MINOR RELEASE
+  #MINOR RELEASE 
   minor-version:
     name: 🎰 Change minor version
     runs-on: ubuntu-latest
