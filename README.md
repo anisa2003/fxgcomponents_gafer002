@@ -1,4 +1,4 @@
-# NPM LIBRAIRIE DE COMPOSANTES REACT
+# LIBRAIRIE NPM DE COMPOSANTES REACT
 [![N|Solid](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
 
 > Travail projet 1, presenté par Anna Ferjani
