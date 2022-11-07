@@ -2,7 +2,8 @@ name: 🚀 Deploy website on push
 
 on: 
   push:
-    path: ["stories/**", "src/components/**"]
+    branches:
+      - master
 
 jobs:
   web-deploy:
