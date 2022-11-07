@@ -7,7 +7,7 @@ export const BSAlert = ({variant, heading, alertBody, icon}) => {
 
   return (
     <>
-      <Alert variant="danger">
+      <Alert variant="{variant}">
           <Alert.Heading> 
             <div className="row">
               <div className="col-auto"><i className={`bi bi-${icon}-circle`} style={{fontSize:'40px'}}></i></div>
