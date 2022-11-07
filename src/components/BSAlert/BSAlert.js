@@ -7,7 +7,7 @@ export const BSAlert = ({variant, heading, alertBody, icon}) => {
 
   return (
     <>
-      <Alert variant={variant}>
+      <Alert variant="danger">
           <Alert.Heading> 
             <div className="row">
               <div className="col-auto"><i className={`bi bi-${icon}-circle`} style={{fontSize:'40px'}}></i></div>
@@ -29,9 +29,3 @@ BSAlert.propTypes = {
   alertBody: PropTypes.string,
   icon: PropTypes.oneOf(['dash', 'check', 'exclamation'])
 };
-
-
-
-
-
-
