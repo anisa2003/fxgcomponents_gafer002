@@ -16,7 +16,7 @@ jobs:
 
     - name: ✨ Build Storybook  
       run: |
-        npm ci
+        npm i
         npm run build-storybook
     
     - name: 📂 Sync files
