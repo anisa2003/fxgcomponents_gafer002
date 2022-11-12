@@ -1,6 +1,6 @@
 {
   "name": "fxgcomponents_gafer002",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Une librairie des composantes react",
   "main": "./src/index.js",
   "files": [
