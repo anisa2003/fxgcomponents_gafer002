@@ -36,3 +36,10 @@ StringInput.args = {
   before: beforeString,
   after: afterString
 };
+
+export const Patate = Template.bind({});
+Patate.args = {
+  placeholder: placeholder,
+  before: "Картошка",
+  after: "куча"
+};
